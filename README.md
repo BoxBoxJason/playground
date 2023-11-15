@@ -10,11 +10,14 @@ Le site est composé de 3 pages différentes:
 - Détail Activité
 
 ### Taverne
-*(page d'accueil)*  
+*(page d'accueil)* 
+![Vue taverne part 1](accueil1.png)  
+![Vue taverne part 2](accueil2.png)
 La taverne est l'endroit où l'on peut voir et intéragir avec tous les clients et les activités.
 
 ### Détail Client
 *(Accessible en cliquant sur le nom d'un client)*  
+![Vue client](detail_client.png)
 Affiche le détail complet du client:
 - Prénom
 - Photo
@@ -39,6 +42,7 @@ De même, on ne peut pas forcer plusieurs clients dans un seul même lieu sous p
 
 ### Détail Activité
 *(Accessible en cliquant sur le nom d'une activité)*  
+![Vue activité](detail_activite.png)
 Affiche le détail complet de l'activité:
 - Titre
 - Photo
