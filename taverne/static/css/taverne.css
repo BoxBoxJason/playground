@@ -1,0 +1,144 @@
+body{
+    margin: 0 0 10px;
+    padding: 0;
+    background:
+      linear-gradient(135deg,#0000 18.75%,#5d3600 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,#5d3600 -6.25% 6.25%,#a4643a 0 18.75%);
+    background-size: 200px 200px;
+
+
+}
+
+
+h1{
+    background-color: #5d3600;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    font-size: 40pt;
+}
+
+
+h2 {
+    margin: 0;
+    padding: 0 50px;
+    font-size: 30pt;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5d3600;
+    border-radius: 4px;
+}
+
+
+h3 {
+    font-size: 20pt;
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+p {
+    margin: 3px 10px;
+    padding: 0;
+}
+
+.signature {
+    text-align: right;
+    color: #aaa;
+    margin: 10px 0;
+}
+
+.section{
+    margin: 0 15px 20px;
+    border: 40px solid #5d3600;
+    border-radius: 40px;
+    padding-bottom: 0 10px;
+    box-shadow: 0 0 0 5px #000;
+}
+
+
+.conteneur{
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+@media (max-width: 767px) {
+    .conteneur {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+.cellule{
+    border: 5px inset #5d3600;
+    padding: 10px 5px;
+    background-color: #fff;
+    transition: background-color 1s;
+    border-radius: 40px;
+    margin: 0 5px;
+    min-width: 50px;
+    width: fit-content;
+}
+
+.cellule:hover {
+    background-color: #888;
+}
+
+
+.photo{
+    max-width: 20vw;
+    min-width: 50px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.detail{
+    margin: 50px auto;
+    
+}
+
+.detail:hover {
+    background-color: #fff;
+}
+
+
+.detail h3{
+    color: #a4643a;
+}
+
+form {
+    width:fit-content;
+    margin: 10px auto 0;
+}
+
+
+.form-button{
+    padding: 8px;
+    color: #fff;
+    background-color: #666;
+    border: 2px inset #999;
+    transition: background-color 1s;
+    border-radius: 8px;
+}
+
+.form-button:hover{
+    background-color: #333;
+}
+
+a:link{
+    color:#a4643a;
+}
+a:visited{
+    color:#853703;
+}
+a:hover{
+    color:#a84e11;
+}
+a:focus{
+    color:green;
+}
+a:active{
+    color:red;
+}

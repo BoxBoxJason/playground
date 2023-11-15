@@ -1,0 +1,44 @@
+{% extends 'taverne/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="section">
+        <h2>Clients </h2>
+        <div class="conteneur clients">
+            {% for client in clients %}
+                {% if client.pk %}
+                <div class="cellule client">
+                    <h3><a href="{% url 'client_detail' pk=client.pk %}">{{ client.id_character }}</a></h3>
+                    <img src="{% static 'img/clients/' %}{{ client.photo }}"  class="photo" alt="{{ client.id_character }}">
+                    <p><em>Titre: {{ client.titre }}</em></p>
+                    <p>Etat: {{ client.etat }}</p>
+                    <p>Lieu: {{ client.lieu }}</p>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Activités</h2>
+        <div class="conteneur activites">
+            {% for activite in activites %}
+                <div class="cellule activite">
+                    <h3><a href="{% url 'activite_detail' pk=activite.pk %}">{{ activite.id_equip }}</a></h3>
+                    <img src="{% static 'img/activites/' %}{{ activite.photo }}" class="photo" alt="{{ activite.id_equip }}">
+                    {% if activite.disponibilite == 'Libre' %}
+                        <p>Disponibilité: Libre</p> 
+                    {% else %}
+                        {% for lieu, occupant in occupants.items %}
+                        {% if lieu == activite.id_equip %}
+                        <p>Occupé par: {{ occupant }}</p>
+                        {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

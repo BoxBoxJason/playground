@@ -1,0 +1,14 @@
+{% extends 'taverne/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="cellule detail">
+        <h3>{{ activite.id_equip }}</h3>
+        <img class="photo" src="{% static 'img/activites/' %}{{ activite.photo }}" alt="{{ activite.id_equip }}">
+        {% if activite.disponibilite == 'Libre' %}
+            <p>Disponibilité: Libre</p>
+        {% else %}
+            <p>Occupant: {{ occupant }}</p>
+        {% endif %}
+    </div>
+{% endblock %}

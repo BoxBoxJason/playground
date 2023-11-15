@@ -1,0 +1,31 @@
+{% extends 'taverne/base.html' %}
+{% load static %}
+{% block content %}
+
+    {% if message != ''%}
+    <div class="alert alert-danger" role="alert" style="text-align: center;">
+        {{message}}
+    </div>
+    {% endif %}
+
+    
+    <div class="cellule detail">
+        <h3>{{ client.id_character }}</h3>
+        <img class="photo" src="{% static 'img/clients/' %}{{ client.photo }}" alt="{{ client.id_character }}">
+        <p><em>{{ client.titre }}</em></p>
+        <p>Etat: {{ client.etat }}</p>
+        <p>Lieu: {{ client.lieu }}</p>
+
+        <form method="POST" class="post-form">{% csrf_token %}
+            <b> Déplacer : </b>
+            {% for field in form %}
+                {{ field }}
+            {% endfor %}
+            <div style="margin: 10px auto 0; width: fit-content;">
+            <button type="submit" class="form-button">OK</button>
+            <a href="{% url 'taverne_view' %}"><button class="form-button">Back</button></a>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

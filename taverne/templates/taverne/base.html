@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Taverne</title>
+        <link rel="stylesheet" href="{% static 'css/taverne.css' %}">
+    </head>
+    <body>
+        <h1>Bienvenue à la Taverne !</h1>
+        <p class="signature"><em>Projet site web "Data Driven Programming" (Loïck GOUPIL-HALLAY)</em></p>
+            {% block content %}
+            {% endblock %}
+
+    </body>
+</html>
