@@ -43,7 +43,6 @@ Affiche le détail complet de l'activité:
 - Titre
 - Photo
 - Disponibilité / Occupant
-- Description
 
 Chaque activité a au maximum un occupant, mis à part les toilettes (magiques) qui sont disponibles à l'infini.  
 
@@ -58,4 +57,8 @@ Chaque activité a au maximum un occupant, mis à part les toilettes (magiques) 
 - Base de données sqlite3
 - Rendu visuel HTML / css
 - Adresse par défaut (en local): 127.0.0.1:8000
+- Adresse publique: https://boxboxjason.pythonanywhere.com
 - Adresse par défaut panel admin (en local): 127.0.0.1:8000/admin
+- Adresse publique panel admin: https://boxboxjason.pythonanywhere.com/admin
+
+(Evitez de vous amuser à tout casser dessus)  
