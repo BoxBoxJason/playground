@@ -1,6 +1,6 @@
 # Bienvenue à la Taverne !
 
-Entrez donc et prenez part à nos diverses activités  
+Entrez donc et prenez part à nos diverses activités  ! 
 
 ## Fonctionnement
 
@@ -11,7 +11,7 @@ Le site est composé de 3 pages différentes:
 
 ### Taverne
 *(page d'accueil)*  
-La taverne est l'endroit où l'on peut voir et intéragir avec tous les clients
+La taverne est l'endroit où l'on peut voir et intéragir avec tous les clients et les activités.
 
 ### Détail Client
 *(Accessible en cliquant sur le nom d'un client)*  
