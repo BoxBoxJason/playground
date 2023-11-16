@@ -35,7 +35,7 @@ def client_detail(request, pk,msg=''):
                     client.save()
 
             else:
-                msg = f"Le lieu {nouveau_lieu.id_equip}est occupé !"
+                msg = f"Le lieu {nouveau_lieu.id_equip} est occupé !"
 
             if msg != '':
                 return render(request, 'taverne/client_detail.html', {'message':msg,'client':client})
